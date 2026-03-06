@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Art — Employer of Record South Africa | B-BBEE Level 1</title>
+    <meta name="description" content="HR Art is South Africa's B-BBEE Level 1 Employer of Record. 100% black female-owned. ICF-certified coaching. Payroll, compliance, recruitment & B-BBEE consulting.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0f1419; }
+        header { background: rgba(15, 20, 25, 0.98); padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255, 193, 7, 0.1); }
+        .header-top { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: #b0b0b0; margin-bottom: 1rem; }
+        .header-top a { color: #b0b0b0; text-decoration: none; margin-left: 2rem; }
+        .header-top a:hover { color: #ffc107; }
+        nav { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.3rem; font-weight: 700; color: #fff; }
+        .logo-sub { font-size: 0.7rem; color: #ffc107; letter-spacing: 2px; }
+        .nav-links { display: flex; gap: 3rem; list-style: none; }
+        .nav-links a { color: #e0e0e0; text-decoration: none; transition: color 0.3s; font-size: 0.95rem; }
+        .nav-links a:hover { color: #ffc107; }
+        .cta-button { background: #ffc107; color: #0f1419; padding: 0.7rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; transition: background 0.3s; font-size: 0.95rem; }
+        .cta-button:hover { background: #ffb300; }
+        .hero { background: linear-gradient(135deg, #1a2a3a 0%, #0f1419 100%); padding: 5rem 2rem; text-align: left; }
+        .hero-content { max-width: 1400px; margin: 0 auto; }
+        .hero-badge { display: inline-block; background: rgba(255, 193, 7, 0.1); border: 1px solid rgba(255, 193, 7, 0.3); color: #ffc107; padding: 0.5rem 1rem; border-radius: 20px; margin-bottom: 2rem; font-size: 0.9rem; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; color: #fff; line-height: 1.2; }
+        .hero h1 .highlight { color: #ffc107; }
+        .hero p { font-size: 1.1rem; margin-bottom: 2rem; color: #b0b0b0; max-width: 600px; }
+        .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .btn-primary { background: #ffc107; color: #0f1419; padding: 1rem 2rem; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; font-size: 1rem; transition: background 0.3s; text-decoration: none; display: inline-block; }
+        .btn-primary:hover { background: #ffb300; }
+        .btn-secondary { background: transparent; color: #e0e0e0; padding: 1rem 2rem; border: 2px solid #ffc107; border-radius: 4px; cursor: pointer; font-weight: 600; font-size: 1rem; transition: all 0.3s; text-decoration: none; display: inline-block; }
+        .btn-secondary:hover { background: #ffc107; color: #0f1419; }
+        .stats { background: rgba(26, 35, 50, 0.5); padding: 3rem 2rem; }
+        .stats-grid { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
+        .stat-item { text-align: center; }
+        .stat-value { font-size: 2.5rem; font-weight: 700; color: #ffc107; margin-bottom: 0.5rem; }
+        .stat-label { color: #b0b0b0; font-size: 0.95rem; }
+        .credentials { background: rgba(26, 35, 50, 0.3); padding: 3rem 2rem; }
+        .credentials-content { max-width: 1400px; margin: 0 auto; }
+        .credentials-title { text-align: center; font-size: 1.3rem; color: #fff; margin-bottom: 2rem; font-weight: 600; }
+        .credentials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .credential-item { background: rgba(255, 193, 7, 0.05); border: 1px solid rgba(255, 193, 7, 0.2); padding: 1.5rem; border-radius: 8px; }
+        .credential-item h4 { color: #ffc107; margin-bottom: 0.5rem; font-size: 1rem; }
+        .credential-item p { color: #b0b0b0; font-size: 0.9rem; }
+        .section { max-width: 1400px; margin: 0 auto; padding: 4rem 2rem; }
+        .section-title { font-size: 2.5rem; margin-bottom: 1rem; color: #fff; font-weight: 700; }
+        .section-subtitle { color: #b0b0b0; margin-bottom: 3rem; font-size: 1.1rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .service-card { background: rgba(255, 193, 7, 0.05); border: 1px solid rgba(255, 193, 7, 0.2); padding: 2rem; border-radius: 8px; transition: all 0.3s; }
+        .service-card:hover { background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.4); transform: translateY(-5px); }
+        .service-card h3 { color: #ffc107; margin-bottom: 1rem; font-size: 1.2rem; }
+        .service-card p { color: #b0b0b0; line-height: 1.8; margin-bottom: 1rem; }
+        .service-card a { color: #ffc107; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+        .service-card a:hover { text-decoration: underline; }
+        .advantage { background: rgba(26, 35, 50, 0.5); }
+        .advantage-content { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .advantage-text h2 { color: #fff; margin-bottom: 1rem; font-size: 2rem; }
+        .advantage-text p { color: #b0b0b0; margin-bottom: 1.5rem; line-height: 1.8; }
+        .advantage-list { list-style: none; }
+        .advantage-list li { color: #b0b0b0; margin-bottom: 1rem; padding-left: 1.5rem; position: relative; }
+        .advantage-list li:before { content: "✓"; color: #ffc107; font-weight: bold; position: absolute; left: 0; }
+        .process { background: rgba(26, 35, 50, 0.3); }
+        .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .process-step { text-align: center; }
+        .process-number { font-size: 3rem; font-weight: 700; color: #ffc107; margin-bottom: 1rem; }
+        .process-step h3 { color: #fff; margin-bottom: 1rem; }
+        .process-step p { color: #b0b0b0; }
+        .founder { background: rgba(26, 35, 50, 0.5); padding: 4rem 2rem; }
+        .founder-content { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .founder-text h3 { color: #ffc107; margin-bottom: 0.5rem; font-size: 1.5rem; }
+        .founder-title { color: #b0b0b0; margin-bottom: 1rem; font-size: 1.1rem; }
+        .founder-text p { color: #b0b0b0; margin-bottom: 1.5rem; line-height: 1.8; }
+        .founder-quote { font-style: italic; color: #e0e0e0; padding: 1.5rem; border-left: 3px solid #ffc107; background: rgba(255, 193, 7, 0.05); }
+        .testimonials { background: rgba(26, 35, 50, 0.3); }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .testimonial-card { background: rgba(255, 193, 7, 0.05); border: 1px solid rgba(255, 193, 7, 0.2); padding: 2rem; border-radius: 8px; }
+        .testimonial-card p { color: #b0b0b0; margin-bottom: 1.5rem; line-height: 1.8; }
+        .testimonial-author { color: #ffc107; font-weight: 600; margin-bottom: 0.5rem; }
+        .testimonial-company { color: #707070; font-size: 0.9rem; }
+        .cta-section { background: linear-gradient(135deg, #1a2a3a 0%, #0f1419 100%); padding: 4rem 2rem; text-align: center; }
+        .cta-section h2 { font-size: 2rem; margin-bottom: 1rem; color: #fff; }
+        .cta-section p { font-size: 1.1rem; color: #b0b0b0; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+        footer { background: rgba(15, 20, 25, 0.95); border-top: 1px solid rgba(255, 193, 7, 0.1); padding: 3rem 2rem; color: #b0b0b0; }
+        .footer-content { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        .footer-section h4 { color: #ffc107; margin-bottom: 1rem; font-size: 1rem; }
+        .footer-section ul { list-style: none; }
+        .footer-section ul li { margin-bottom: 0.5rem; }
+        .footer-section a { color: #b0b0b0; text-decoration: none; transition: color 0.3s; }
+        .footer-section a:hover { color: #ffc107; }
+        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 193, 7, 0.1); color: #707070; font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { gap: 1rem; font-size: 0.85rem; }
+            .hero-buttons { flex-direction: column; }
+            .btn-primary, .btn-secondary { width: 100%; }
+            .advantage-content, .founder-content { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div>Reg. No. 2018/109952/07 | B-BBEE Level 1 Contributor</div>
+            <div>
+                <a href="tel:0604395002">060 439 5002</a>
+                <a href="mailto:info@hrart.co.za">info@hrart.co.za</a>
+            </div>
+        </div>
+        <nav>
+            <div>
+                <div class="logo">HR art.</div>
+                <div class="logo-sub">EXTENDING IMPACT</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#advantage">B-BBEE Advantage</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="cta-button">Book Consultation</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">● B-BBEE Level 1 · 100% Black Female-Owned · Gauteng, South Africa</div>
+            <h1>Hire in South Africa.<br>Stay Compliant.<br><span class="highlight">Boost Your B-BBEE Score.</span></h1>
+            <p>HR Art is your trusted Employer of Record partner — managing payroll, compliance, and HR so you can focus on growth. With 8+ years of experience and a government-verified track record.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Get a Free Consultation</button>
+                <button class="btn-secondary">Our Services</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-value">8+</div>
+                <div class="stat-label">YEARS IN BUSINESS</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">Level 1</div>
+                <div class="stat-label">B-BBEE CONTRIBUTOR</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">135%</div>
+                <div class="stat-label">PROCUREMENT RECOGNITION</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">BLACK FEMALE-OWNED</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="credentials">
+        <div class="credentials-content">
+            <div class="credentials-title">VERIFIED CREDENTIALS & MEMBERSHIPS</div>
+            <div class="credentials-grid">
+                <div class="credential-item"><h4>CIPC Registered</h4><p>Reg. 2018/109952/07</p></div>
+                <div class="credential-item"><h4>PEA Certificate</h4><p>Dept. of Employment & Labour</p></div>
+                <div class="credential-item"><h4>APSO Full Member</h4><p>No. H069-S</p></div>
+                <div class="credential-item"><h4>ICF Member</h4><p>No. 009508241l</p></div>
+                <div class="credential-item"><h4>GIBS Alumni</h4><p>Univ. of Pretoria</p></div>
+                <div class="credential-item"><h4>B-BBEE Level 1</h4><p>135% Procurement Recognition</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <h2 class="section-title">WHAT WE DO</h2>
+        <p class="section-subtitle">End-to-End HR Solutions</p>
+        <p style="color: #b0b0b0; margin-bottom: 3rem;">From Employer of Record to executive coaching, we provide the full HR value chain — so your business can grow without compliance risk.</p>
+        <div class="services-grid">
+            <div class="service-card"><h3>Employer of Record</h3><p>We act as the legal employer for your staff — managing contracts, payroll, and statutory compliance.</p><a href="#contact">Learn more →</a></div>
+            <div class="service-card"><h3>Payroll Management</h3><p>End-to-end payroll including PAYE, UIF, SDL, and COIDA — accurate, timely, and fully compliant.</p><a href="#contact">Learn more →</a></div>
+            <div class="service-card"><h3>Recruitment</h3><p>Full-cycle recruitment backed by our PEA Certificate from the Dept. of Employment & Labour.</p><a href="#contact">Learn more →</a></div>
+            <div class="service-card"><h3>Business Coaching</h3><p>ICF-certified coaching using the proprietary GROW-me framework. Proven results at Standard Bank and Discovery.</p><a href="#contact">Learn more →</a></div>
+            <div class="service-card"><h3>Sign Language Services</h3><p>Workplace sign language interpretation — enabling inclusive environments for employees with hearing impairments.</p><a href="#contact">Learn more →</a></div>
+            <div class="service-card"><h3>B-BBEE Consulting</h3><p>Annual B-BBEE plans and Enterprise Development programmes. Clients receive 135% procurement recognition.</p><a href="#contact">Learn more →</a></div>
+        </div>
+    </section>
+
+    <section class="advantage" id="advantage">
+        <div class="section">
+            <h2 class="section-title">UNIQUE ADVANTAGE</h2>
+            <div class="advantage-content">
+                <div>
+                    <h2>The B-BBEE Advantage Only HR Art Can Offer</h2>
+                    <p>As a 100% black female-owned, B-BBEE Level 1 contributor, every rand you spend with HR Art gives your business a 135% procurement recognition on your own B-BBEE scorecard.</p>
+                    <p>No other EOR provider in South Africa currently offers this dual advantage: best-in-class HR services and a measurable improvement to your transformation credentials.</p>
+                </div>
+                <div>
+                    <ul class="advantage-list">
+                        <li>135% procurement recognition for your B-BBEE scorecard</li>
+                        <li>Supports your Enterprise & Supplier Development targets</li>
+                        <li>Strengthens your annual B-BBEE verification score</li>
+                        <li>Preferred supplier for government and corporate procurement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="section">
+            <h2 class="section-title">SIMPLE PROCESS</h2>
+            <p class="section-subtitle">How HR Art Works</p>
+            <div class="process-grid">
+                <div class="process-step"><div class="process-number">01</div><h3>Tell Us Your Needs</h3><p>Share your workforce requirements, compliance concerns, and business goals in a free 30-minute consultation.</p></div>
+                <div class="process-step"><div class="process-number">02</div><h3>We Onboard Your Employees</h3><p>HR Art becomes the legal employer. We handle contracts, payroll setup, and all statutory registrations.</p></div>
+                <div class="process-step"><div class="process-number">03</div><h3>Focus on Growth</h3><p>We manage compliance, payroll, and HR — you focus on running your business. Monthly reporting included.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="founder" id="about">
+        <div class="founder-content">
+            <div>
+                <h3>MEET THE FOUNDER</h3>
+                <div class="founder-title">Sempenyane Sarah Mothusi</div>
+                <p style="font-weight: 600; color: #ffc107;">FOUNDER & MANAGING DIRECTOR</p>
+                <p>Sempe is a Performance Management specialist with 18 years of HR management experience across banking, mining, marketing, and consulting. She is a GIBS Professional Business Coaching alumni, an ICF-certified coach, and the developer of the proprietary GROW-me coaching framework.</p>
+                <div class="founder-quote">"I first establish myself as a true strategic advisor, not just an HR person. Being perceived as a well-rounded partner is key to my increased involvement with business owners."</div>
+            </div>
+            <div>
+                <ul style="list-style: none; color: #b0b0b0;">
+                    <li style="margin-bottom: 1rem;">✓ GIBS Alumni</li>
+                    <li style="margin-bottom: 1rem;">✓ ICF Certified</li>
+                    <li style="margin-bottom: 1rem;">✓ APSO Member</li>
+                    <li style="margin-bottom: 1rem;">✓ 18 Years Experience</li>
+                    <li style="margin-bottom: 1rem;">✓ GROW-me Framework</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">CLIENT REFERENCES</h2>
+        <p class="section-subtitle">Verified Client Testimonials</p>
+        <p style="color: #b0b0b0; margin-bottom: 3rem;">These testimonials are drawn from signed reference letters provided by HR Art's clients.</p>
+        <div class="testimonials-grid">
+            <div class="testimonial-card"><p>"The level of service and output has always exceeded expectation even with very stringent timelines. Singo Mining & Plant Hire is extremely satisfied and highly recommends them."</p><div class="testimonial-author">Robert Nesengani</div><div class="testimonial-company">Singo Mining & Plant Hire · Performance Coaching & B-BBEE · 5-year engagement</div></div>
+            <div class="testimonial-card"><p>"We are satisfied with the value addition they have made to the Commission and we highly recommend HR ART for recruitment services and business performance coaching."</p><div class="testimonial-author">Mr. Thabo Makhuto</div><div class="testimonial-company">Commission on Restitution of Land Rights · Recruitment · 18-month government engagement</div></div>
+            <div class="testimonial-card"><p>"It has been the knowledge and creativity of HR Art that resulted in impressive results. I strongly recommend their services and look forward to working with them again."</p><div class="testimonial-author">Muziwakhe Khone</div><div class="testimonial-company">Phekon Financial Solutions (FSP 31057) · HR Contracts, Onboarding & Recruitment</div></div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <h2>Ready to Extend Your Impact?</h2>
+        <p>Book a free 30-minute consultation with Sempe Mothusi and discover how HR Art can simplify your HR compliance, boost your B-BBEE score, and empower your people.</p>
+        <div class="hero-buttons" style="justify-content: center;">
+            <button class="btn-primary">Book Free Consultation</button>
+            <button class="btn-secondary">Call 060 439 5002</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section"><h4>HR art.</h4><p style="margin-bottom: 1rem;">EXTENDING IMPACT</p><p>South Africa's premier B-BBEE Level 1 Employer of Record and HR Advisory company. 100% black female-owned. Gauteng-based, nationally active.</p></div>
+            <div class="footer-section"><h4>SERVICES</h4><ul><li><a href="#services">Employer of Record (EOR)</a></li><li><a href="#services">Payroll Management</a></li><li><a href="#services">Recruitment</a></li><li><a href="#services">HR Advisory & Compliance</a></li><li><a href="#services">Business Coaching</a></li><li><a href="#services">Sign Language Services</a></li><li><a href="#services">B-BBEE Consulting</a></li></ul></div>
+            <div class="footer-section"><h4>COMPANY</h4><ul><li><a href="#about">About HR Art</a></li><li><a href="#about">Meet the Founder</a></li><li><a href="#advantage">B-BBEE Advantage</a></li><li><a href="#contact">Contact Us</a></li><li><a href="#contact">Book Consultation</a></li></ul></div>
+            <div class="footer-section"><h4>CONTACT</h4><ul><li><a href="tel:0604395002">060 439 5002</a></li><li><a href="mailto:info@hrart.co.za">info@hrart.co.za</a></li><li>Nasrec Road, Aeroton, Gauteng</li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 HR Art (Pty) Ltd. All rights reserved. Reg. No. 2018/109952/07</p></div>
+    </footer>
+</body>
+</html>
