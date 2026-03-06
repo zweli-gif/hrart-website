@@ -5,97 +5,683 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HR Art — Employer of Record South Africa | B-BBEE Level 1</title>
     <meta name="description" content="HR Art is South Africa's B-BBEE Level 1 Employer of Record. 100% black female-owned. ICF-certified coaching. Payroll, compliance, recruitment & B-BBEE consulting.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0f1419; }
-        header { background: rgba(15, 20, 25, 0.98); padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255, 193, 7, 0.1); }
-        .header-top { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: #b0b0b0; margin-bottom: 1rem; }
-        .header-top a { color: #b0b0b0; text-decoration: none; margin-left: 2rem; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0f1419;
+        }
+        
+        h1, h2, h3 { font-family: 'Merriweather', serif; }
+        
+        header {
+            background: rgba(15, 20, 25, 0.98);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 193, 7, 0.1);
+        }
+        
+        .header-top {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #b0b0b0;
+            margin-bottom: 1rem;
+        }
+        
+        .header-top a {
+            color: #b0b0b0;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+        
         .header-top a:hover { color: #ffc107; }
-        nav { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.3rem; font-weight: 700; color: #fff; }
-        .logo-sub { font-size: 0.7rem; color: #ffc107; letter-spacing: 2px; }
-        .nav-links { display: flex; gap: 3rem; list-style: none; }
-        .nav-links a { color: #e0e0e0; text-decoration: none; transition: color 0.3s; font-size: 0.95rem; }
+        
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        
+        .logo-sub {
+            font-size: 0.65rem;
+            color: #ffc107;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        
         .nav-links a:hover { color: #ffc107; }
-        .cta-button { background: #ffc107; color: #0f1419; padding: 0.7rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; transition: background 0.3s; font-size: 0.95rem; }
+        
+        .cta-button {
+            background: #ffc107;
+            color: #0f1419;
+            padding: 0.7rem 1.8rem;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+            font-size: 0.95rem;
+        }
+        
         .cta-button:hover { background: #ffb300; }
-        .hero { background: linear-gradient(135deg, #1a2a3a 0%, #0f1419 100%); padding: 5rem 2rem; text-align: left; }
-        .hero-content { max-width: 1400px; margin: 0 auto; }
-        .hero-badge { display: inline-block; background: rgba(255, 193, 7, 0.1); border: 1px solid rgba(255, 193, 7, 0.3); color: #ffc107; padding: 0.5rem 1rem; border-radius: 20px; margin-bottom: 2rem; font-size: 0.9rem; }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; color: #fff; line-height: 1.2; }
+        
+        .hero {
+            background: linear-gradient(135deg, rgba(26, 42, 58, 0.8) 0%, rgba(15, 20, 25, 0.9) 100%);
+            padding: 6rem 2rem;
+            text-align: left;
+        }
+        
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 193, 7, 0.08);
+            border: 1px solid rgba(255, 193, 7, 0.25);
+            color: #ffc107;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            margin-bottom: 2.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+            line-height: 1.15;
+            font-weight: 700;
+        }
+        
         .hero h1 .highlight { color: #ffc107; }
-        .hero p { font-size: 1.1rem; margin-bottom: 2rem; color: #b0b0b0; max-width: 600px; }
-        .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
-        .btn-primary { background: #ffc107; color: #0f1419; padding: 1rem 2rem; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; font-size: 1rem; transition: background 0.3s; text-decoration: none; display: inline-block; }
+        
+        .hero p {
+            font-size: 1.05rem;
+            margin-bottom: 2.5rem;
+            color: #c0c0c0;
+            max-width: 650px;
+            line-height: 1.7;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: #ffc107;
+            color: #0f1419;
+            padding: 1.1rem 2.5rem;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
         .btn-primary:hover { background: #ffb300; }
-        .btn-secondary { background: transparent; color: #e0e0e0; padding: 1rem 2rem; border: 2px solid #ffc107; border-radius: 4px; cursor: pointer; font-weight: 600; font-size: 1rem; transition: all 0.3s; text-decoration: none; display: inline-block; }
-        .btn-secondary:hover { background: #ffc107; color: #0f1419; }
-        .stats { background: rgba(26, 35, 50, 0.5); padding: 3rem 2rem; }
-        .stats-grid { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
-        .stat-item { text-align: center; }
-        .stat-value { font-size: 2.5rem; font-weight: 700; color: #ffc107; margin-bottom: 0.5rem; }
-        .stat-label { color: #b0b0b0; font-size: 0.95rem; }
-        .credentials { background: rgba(26, 35, 50, 0.3); padding: 3rem 2rem; }
-        .credentials-content { max-width: 1400px; margin: 0 auto; }
-        .credentials-title { text-align: center; font-size: 1.3rem; color: #fff; margin-bottom: 2rem; font-weight: 600; }
-        .credentials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-        .credential-item { background: rgba(255, 193, 7, 0.05); border: 1px solid rgba(255, 193, 7, 0.2); padding: 1.5rem; border-radius: 8px; }
-        .credential-item h4 { color: #ffc107; margin-bottom: 0.5rem; font-size: 1rem; }
-        .credential-item p { color: #b0b0b0; font-size: 0.9rem; }
-        .section { max-width: 1400px; margin: 0 auto; padding: 4rem 2rem; }
-        .section-title { font-size: 2.5rem; margin-bottom: 1rem; color: #fff; font-weight: 700; }
-        .section-subtitle { color: #b0b0b0; margin-bottom: 3rem; font-size: 1.1rem; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .service-card { background: rgba(255, 193, 7, 0.05); border: 1px solid rgba(255, 193, 7, 0.2); padding: 2rem; border-radius: 8px; transition: all 0.3s; }
-        .service-card:hover { background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.4); transform: translateY(-5px); }
-        .service-card h3 { color: #ffc107; margin-bottom: 1rem; font-size: 1.2rem; }
-        .service-card p { color: #b0b0b0; line-height: 1.8; margin-bottom: 1rem; }
-        .service-card a { color: #ffc107; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
-        .service-card a:hover { text-decoration: underline; }
-        .advantage { background: rgba(26, 35, 50, 0.5); }
-        .advantage-content { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-        .advantage-text h2 { color: #fff; margin-bottom: 1rem; font-size: 2rem; }
-        .advantage-text p { color: #b0b0b0; margin-bottom: 1.5rem; line-height: 1.8; }
-        .advantage-list { list-style: none; }
-        .advantage-list li { color: #b0b0b0; margin-bottom: 1rem; padding-left: 1.5rem; position: relative; }
-        .advantage-list li:before { content: "✓"; color: #ffc107; font-weight: bold; position: absolute; left: 0; }
-        .process { background: rgba(26, 35, 50, 0.3); }
-        .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-        .process-step { text-align: center; }
-        .process-number { font-size: 3rem; font-weight: 700; color: #ffc107; margin-bottom: 1rem; }
-        .process-step h3 { color: #fff; margin-bottom: 1rem; }
-        .process-step p { color: #b0b0b0; }
-        .founder { background: rgba(26, 35, 50, 0.5); padding: 4rem 2rem; }
-        .founder-content { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-        .founder-text h3 { color: #ffc107; margin-bottom: 0.5rem; font-size: 1.5rem; }
-        .founder-title { color: #b0b0b0; margin-bottom: 1rem; font-size: 1.1rem; }
-        .founder-text p { color: #b0b0b0; margin-bottom: 1.5rem; line-height: 1.8; }
-        .founder-quote { font-style: italic; color: #e0e0e0; padding: 1.5rem; border-left: 3px solid #ffc107; background: rgba(255, 193, 7, 0.05); }
-        .testimonials { background: rgba(26, 35, 50, 0.3); }
-        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .testimonial-card { background: rgba(255, 193, 7, 0.05); border: 1px solid rgba(255, 193, 7, 0.2); padding: 2rem; border-radius: 8px; }
-        .testimonial-card p { color: #b0b0b0; margin-bottom: 1.5rem; line-height: 1.8; }
-        .testimonial-author { color: #ffc107; font-weight: 600; margin-bottom: 0.5rem; }
-        .testimonial-company { color: #707070; font-size: 0.9rem; }
-        .cta-section { background: linear-gradient(135deg, #1a2a3a 0%, #0f1419 100%); padding: 4rem 2rem; text-align: center; }
-        .cta-section h2 { font-size: 2rem; margin-bottom: 1rem; color: #fff; }
-        .cta-section p { font-size: 1.1rem; color: #b0b0b0; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
-        footer { background: rgba(15, 20, 25, 0.95); border-top: 1px solid rgba(255, 193, 7, 0.1); padding: 3rem 2rem; color: #b0b0b0; }
-        .footer-content { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
-        .footer-section h4 { color: #ffc107; margin-bottom: 1rem; font-size: 1rem; }
-        .footer-section ul { list-style: none; }
-        .footer-section ul li { margin-bottom: 0.5rem; }
-        .footer-section a { color: #b0b0b0; text-decoration: none; transition: color 0.3s; }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #e0e0e0;
+            padding: 1.1rem 2.5rem;
+            border: 2px solid #ffc107;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            background: #ffc107;
+            color: #0f1419;
+        }
+        
+        .credentials-strip {
+            background: rgba(26, 35, 50, 0.4);
+            padding: 1.5rem 2rem;
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: #b0b0b0;
+        }
+        
+        .credentials-strip span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .credentials-strip span:before {
+            content: "●";
+            color: #ffc107;
+        }
+        
+        .stats {
+            background: rgba(26, 35, 50, 0.3);
+            padding: 3.5rem 2rem;
+        }
+        
+        .stats-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #ffc107;
+            margin-bottom: 0.5rem;
+            font-family: 'Merriweather', serif;
+        }
+        
+        .stat-label {
+            color: #b0b0b0;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        
+        .credentials {
+            background: rgba(26, 35, 50, 0.2);
+            padding: 3.5rem 2rem;
+        }
+        
+        .credentials-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .credentials-title {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 2.5rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        
+        .credential-item {
+            background: rgba(255, 193, 7, 0.03);
+            border: 1px solid rgba(255, 193, 7, 0.15);
+            padding: 1.5rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .credential-item h4 {
+            color: #ffc107;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+        
+        .credential-item p {
+            color: #a0a0a0;
+            font-size: 0.85rem;
+        }
+        
+        .section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4.5rem 2rem;
+        }
+        
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            font-weight: 700;
+        }
+        
+        .section-subtitle {
+            color: #b0b0b0;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        .section-desc {
+            color: #a0a0a0;
+            margin-bottom: 3rem;
+            font-size: 1rem;
+            max-width: 800px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .service-card {
+            background: rgba(255, 193, 7, 0.03);
+            border: 1px solid rgba(255, 193, 7, 0.15);
+            padding: 2.2rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .service-card:hover {
+            background: rgba(255, 193, 7, 0.08);
+            border-color: rgba(255, 193, 7, 0.3);
+            transform: translateY(-3px);
+        }
+        
+        .service-card h3 {
+            color: #ffc107;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .service-card p {
+            color: #a0a0a0;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+            font-size: 0.95rem;
+        }
+        
+        .service-card a {
+            color: #ffc107;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        
+        .service-card a:hover { color: #ffb300; }
+        
+        .advantage {
+            background: rgba(26, 35, 50, 0.3);
+        }
+        
+        .advantage-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .advantage-text h2 {
+            color: #fff;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        
+        .advantage-text p {
+            color: #a0a0a0;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+        
+        .advantage-list {
+            list-style: none;
+        }
+        
+        .advantage-list li {
+            color: #a0a0a0;
+            margin-bottom: 1.2rem;
+            padding-left: 1.8rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+        
+        .advantage-list li:before {
+            content: "✓";
+            color: #ffc107;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.1rem;
+        }
+        
+        .mantra {
+            background: rgba(26, 35, 50, 0.2);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .mantra-text {
+            max-width: 1400px;
+            margin: 0 auto;
+            font-size: 1.4rem;
+            color: #e0e0e0;
+            font-style: italic;
+            line-height: 1.8;
+        }
+        
+        .process {
+            background: rgba(26, 35, 50, 0.15);
+        }
+        
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+        }
+        
+        .process-step {
+            text-align: center;
+        }
+        
+        .process-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #ffc107;
+            margin-bottom: 1rem;
+            font-family: 'Merriweather', serif;
+        }
+        
+        .process-step h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .process-step p {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        .recognition {
+            background: rgba(26, 35, 50, 0.3);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .recognition-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .recognition-title {
+            font-size: 1.5rem;
+            color: #ffc107;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .recognition-subtitle {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            font-weight: 600;
+        }
+        
+        .founder {
+            background: rgba(26, 35, 50, 0.2);
+            padding: 4.5rem 2rem;
+        }
+        
+        .founder-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .founder-text h3 {
+            color: #ffc107;
+            margin-bottom: 0.3rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .founder-title {
+            color: #b0b0b0;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        .founder-role {
+            color: #ffc107;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .founder-text p {
+            color: #a0a0a0;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+        
+        .founder-quote {
+            font-style: italic;
+            color: #e0e0e0;
+            padding: 1.5rem;
+            border-left: 3px solid #ffc107;
+            background: rgba(255, 193, 7, 0.03);
+            font-size: 0.95rem;
+        }
+        
+        .founder-credentials {
+            list-style: none;
+            color: #a0a0a0;
+        }
+        
+        .founder-credentials li {
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+        
+        .founder-credentials li:before {
+            content: "✓ ";
+            color: #ffc107;
+            font-weight: bold;
+        }
+        
+        .testimonials {
+            background: rgba(26, 35, 50, 0.15);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 193, 7, 0.03);
+            border: 1px solid rgba(255, 193, 7, 0.15);
+            padding: 2rem;
+            border-radius: 5px;
+        }
+        
+        .testimonial-card p {
+            color: #a0a0a0;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+        
+        .testimonial-author {
+            color: #ffc107;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+        }
+        
+        .testimonial-company {
+            color: #707070;
+            font-size: 0.8rem;
+        }
+        
+        .clients-section {
+            background: rgba(26, 35, 50, 0.3);
+            padding: 3rem 2rem;
+        }
+        
+        .clients-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .client-item {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, rgba(26, 42, 58, 0.6) 0%, rgba(15, 20, 25, 0.8) 100%);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            font-weight: 700;
+        }
+        
+        .cta-section p {
+            font-size: 1.05rem;
+            color: #a0a0a0;
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+        
+        footer {
+            background: rgba(15, 20, 25, 0.95);
+            border-top: 1px solid rgba(255, 193, 7, 0.1);
+            padding: 3.5rem 2rem 2rem;
+            color: #a0a0a0;
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            color: #ffc107;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.6rem;
+            font-size: 0.9rem;
+        }
+        
+        .footer-section a {
+            color: #a0a0a0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
         .footer-section a:hover { color: #ffc107; }
-        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 193, 7, 0.1); color: #707070; font-size: 0.9rem; }
+        
+        .footer-section p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 193, 7, 0.1);
+            color: #707070;
+            font-size: 0.85rem;
+        }
+        
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
+            .hero h1 { font-size: 2.2rem; }
             .nav-links { gap: 1rem; font-size: 0.85rem; }
             .hero-buttons { flex-direction: column; }
             .btn-primary, .btn-secondary { width: 100%; }
             .advantage-content, .founder-content { grid-template-columns: 1fr; }
+            .header-top { flex-direction: column; gap: 1rem; text-align: center; }
+            .header-top a { margin-left: 0; }
         }
     </style>
 </head>
@@ -136,6 +722,13 @@
         </div>
     </section>
 
+    <div class="credentials-strip">
+        <span>CIPC Registered</span>
+        <span>PEA Certified</span>
+        <span>APSO Member</span>
+        <span>ICF Certified Coach</span>
+    </div>
+
     <section class="stats">
         <div class="stats-grid">
             <div class="stat-item">
@@ -174,7 +767,7 @@
     <section class="section" id="services">
         <h2 class="section-title">WHAT WE DO</h2>
         <p class="section-subtitle">End-to-End HR Solutions</p>
-        <p style="color: #b0b0b0; margin-bottom: 3rem;">From Employer of Record to executive coaching, we provide the full HR value chain — so your business can grow without compliance risk.</p>
+        <p class="section-desc">From Employer of Record to executive coaching, we provide the full HR value chain — so your business can grow without compliance risk.</p>
         <div class="services-grid">
             <div class="service-card"><h3>Employer of Record</h3><p>We act as the legal employer for your staff — managing contracts, payroll, and statutory compliance.</p><a href="#contact">Learn more →</a></div>
             <div class="service-card"><h3>Payroll Management</h3><p>End-to-end payroll including PAYE, UIF, SDL, and COIDA — accurate, timely, and fully compliant.</p><a href="#contact">Learn more →</a></div>
@@ -206,6 +799,12 @@
         </div>
     </section>
 
+    <section class="mantra">
+        <div class="mantra-text">
+            "Help business pack a billion by empowering people and driving a high performance culture."
+        </div>
+    </section>
+
     <section class="process">
         <div class="section">
             <h2 class="section-title">SIMPLE PROCESS</h2>
@@ -218,22 +817,29 @@
         </div>
     </section>
 
+    <section class="recognition">
+        <div class="recognition-content">
+            <div class="recognition-title">RECOGNITION</div>
+            <div class="recognition-subtitle">Top Performing Business Coach 2024 — Standard Bank</div>
+        </div>
+    </section>
+
     <section class="founder" id="about">
         <div class="founder-content">
             <div>
                 <h3>MEET THE FOUNDER</h3>
                 <div class="founder-title">Sempenyane Sarah Mothusi</div>
-                <p style="font-weight: 600; color: #ffc107;">FOUNDER & MANAGING DIRECTOR</p>
+                <div class="founder-role">FOUNDER & MANAGING DIRECTOR</div>
                 <p>Sempe is a Performance Management specialist with 18 years of HR management experience across banking, mining, marketing, and consulting. She is a GIBS Professional Business Coaching alumni, an ICF-certified coach, and the developer of the proprietary GROW-me coaching framework.</p>
                 <div class="founder-quote">"I first establish myself as a true strategic advisor, not just an HR person. Being perceived as a well-rounded partner is key to my increased involvement with business owners."</div>
             </div>
             <div>
-                <ul style="list-style: none; color: #b0b0b0;">
-                    <li style="margin-bottom: 1rem;">✓ GIBS Alumni</li>
-                    <li style="margin-bottom: 1rem;">✓ ICF Certified</li>
-                    <li style="margin-bottom: 1rem;">✓ APSO Member</li>
-                    <li style="margin-bottom: 1rem;">✓ 18 Years Experience</li>
-                    <li style="margin-bottom: 1rem;">✓ GROW-me Framework</li>
+                <ul class="founder-credentials">
+                    <li>GIBS Alumni</li>
+                    <li>ICF Certified</li>
+                    <li>APSO Member</li>
+                    <li>18 Years Experience</li>
+                    <li>GROW-me Framework</li>
                 </ul>
             </div>
         </div>
@@ -242,11 +848,24 @@
     <section class="section">
         <h2 class="section-title">CLIENT REFERENCES</h2>
         <p class="section-subtitle">Verified Client Testimonials</p>
-        <p style="color: #b0b0b0; margin-bottom: 3rem;">These testimonials are drawn from signed reference letters provided by HR Art's clients.</p>
+        <p class="section-desc">These testimonials are drawn from signed reference letters provided by HR Art's clients.</p>
         <div class="testimonials-grid">
             <div class="testimonial-card"><p>"The level of service and output has always exceeded expectation even with very stringent timelines. Singo Mining & Plant Hire is extremely satisfied and highly recommends them."</p><div class="testimonial-author">Robert Nesengani</div><div class="testimonial-company">Singo Mining & Plant Hire · Performance Coaching & B-BBEE · 5-year engagement</div></div>
             <div class="testimonial-card"><p>"We are satisfied with the value addition they have made to the Commission and we highly recommend HR ART for recruitment services and business performance coaching."</p><div class="testimonial-author">Mr. Thabo Makhuto</div><div class="testimonial-company">Commission on Restitution of Land Rights · Recruitment · 18-month government engagement</div></div>
             <div class="testimonial-card"><p>"It has been the knowledge and creativity of HR Art that resulted in impressive results. I strongly recommend their services and look forward to working with them again."</p><div class="testimonial-author">Muziwakhe Khone</div><div class="testimonial-company">Phekon Financial Solutions (FSP 31057) · HR Contracts, Onboarding & Recruitment</div></div>
+        </div>
+    </section>
+
+    <section class="clients-section">
+        <div class="clients-grid">
+            <div class="client-item">Standard Bank</div>
+            <div class="client-item">Discovery</div>
+            <div class="client-item">Singo Mining & Plant Hire</div>
+            <div class="client-item">Commission on Restitution of Land Rights</div>
+            <div class="client-item">Phekon Financial Solutions</div>
+            <div class="client-item">Leratadima Marketing</div>
+            <div class="client-item">Ntiyiso Consulting</div>
+            <div class="client-item">Drs. Kara & Twala Inc.</div>
         </div>
     </section>
 
@@ -262,11 +881,14 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section"><h4>HR art.</h4><p style="margin-bottom: 1rem;">EXTENDING IMPACT</p><p>South Africa's premier B-BBEE Level 1 Employer of Record and HR Advisory company. 100% black female-owned. Gauteng-based, nationally active.</p></div>
-            <div class="footer-section"><h4>SERVICES</h4><ul><li><a href="#services">Employer of Record (EOR)</a></li><li><a href="#services">Payroll Management</a></li><li><a href="#services">Recruitment</a></li><li><a href="#services">HR Advisory & Compliance</a></li><li><a href="#services">Business Coaching</a></li><li><a href="#services">Sign Language Services</a></li><li><a href="#services">B-BBEE Consulting</a></li></ul></div>
-            <div class="footer-section"><h4>COMPANY</h4><ul><li><a href="#about">About HR Art</a></li><li><a href="#about">Meet the Founder</a></li><li><a href="#advantage">B-BBEE Advantage</a></li><li><a href="#contact">Contact Us</a></li><li><a href="#contact">Book Consultation</a></li></ul></div>
+            <div class="footer-section"><h4>SERVICES</h4><ul><li><a href="#services">Employer of Record (EOR)</a></li><li><a href="#services">Payroll Management</a></li><li><a href="#services">Recruitment</a></li><li><a href="#services">HR Advisory & Compliance</a></li><li><a href="#services">Business Coaching</a></li><li><a href="#services">Sign Language Services</a></li><li><a href="#services">B-BBEE Consulting</a></li><li><a href="#services">Skills Development</a></li></ul></div>
+            <div class="footer-section"><h4>COMPANY</h4><ul><li><a href="#about">About HR Art</a></li><li><a href="#about">Meet the Founder</a></li><li><a href="#advantage">B-BBEE Advantage</a></li><li><a href="#contact">Client References</a></li><li><a href="#contact">Contact Us</a></li><li><a href="#contact">Book Consultation</a></li></ul></div>
             <div class="footer-section"><h4>CONTACT</h4><ul><li><a href="tel:0604395002">060 439 5002</a></li><li><a href="mailto:info@hrart.co.za">info@hrart.co.za</a></li><li>Nasrec Road, Aeroton, Gauteng</li></ul></div>
+            <div class="footer-section"><h4>CREDENTIALS</h4><ul><li>CIPC Registered<br>Reg. 2018/109952/07</li><li>PEA Certificate<br>PEA1000747/3</li><li>APSO Full Member<br>No. H069-S</li><li>ICF Member<br>No. 009508241l</li></ul></div>
         </div>
-        <div class="footer-bottom"><p>© 2026 HR Art (Pty) Ltd. All rights reserved. Reg. No. 2018/109952/07</p></div>
+        <div class="footer-bottom">
+            <p>© 2026 HR Art (Pty) Ltd. All rights reserved. Reg. No. 2018/109952/07 · Aeroton, Gauteng, South Africa</p>
+        </div>
     </footer>
 </body>
 </html>
